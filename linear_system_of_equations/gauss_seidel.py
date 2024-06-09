@@ -32,4 +32,4 @@ if __name__ == '__main__':
     X = [0, 0, 0]   
     for i in range(5):
         X = gauss_seidel(A, Y, X)
-        print(X)
+        print(f"{i+1}. iterasyon: ", X)
