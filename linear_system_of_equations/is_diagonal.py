@@ -4,7 +4,7 @@ A = [[8, 3, -3], [-2, 1, 5], [3, 5, 10]]
 #X: initial guess for our method(Başlangıç Değer)
 #Y: terms of the equations
 
-def Is_DiagonalDominant(A: list[list[int]]) -> bool:
+def Is_DiagonalDominant(A) -> bool:
     """
     KKB matris yani 'kesin köşegen baskın' matris olup olmadığını kontrol ediyoruz. eğer kesin köşegensel matris ise True dönecek, değilse False.
 

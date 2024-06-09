@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block head %}
+  
+{% endblock head %}
+
+{% block body %}
+
+{% if result %}
+Jacobi:
+<br><br>
+{{result['jacobi']}}
+<br><br>
+Gauss-Seidel:
+<br><br>
+{{result['gauss']}}
+<br><br>
+İterasyon:
+<br><br>
+{{result['iterations']}}
+
+
+{% else %}
+  
+<h1>Gauss-Seidel ve Jacobi İterasyonu</h1>
+<form method="POST">
+    A Matrisi <input name="A" required>
+    Y Matrisi <input name="Y" required> 
+    Başlangıç Değer <input name="x" required>
+    İterasyon Sayısı <input name="iterations" type="number" min="1" required> 
+    <button type="submit">Çalıştır</button>
+</form>
+<h3>Örnek olarak</h3>
+<img src="{{url_for('static', filename='img/ornek.png')}}" alt=""/>
+<br>
+Burada A matrisi Notasyonların katsayısından oluşacak 
+<br><br>
+[[8, 3, -3], [-2, -8, 5], [3, 5, 10]]
+<br><br><br>
+Y Matrisi Bu denklemlerin sonucundaki sayılardan oluşacak
+<br><br>
+[14, 5, -8]
+<br><br><br>
+X Matrisimiz zaten Başlangıç Değerimiz
+<br><br>
+[0, 0, 0]
+
+{% endif %}
+    
+
+{% endblock body %}
