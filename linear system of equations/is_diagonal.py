@@ -14,9 +14,9 @@ def Is_DiagonalDominant(A: list[list[int]]) -> bool:
     
     an instance;
     
-    17$x_{1}$ + 5$x_{2}$ + 10$x_{3}$ = 15
-    8$x_{1}$ + 15$x_{2}$ + 2$x_{3}$ = 12
-    6$x_{1}$ + 2$x_{2}$ + 9$x_{3}$ = 7
+    17x+ 5y+ 10z = 15
+    8x+ 15y+ 2z = 12
+    6x+ 2y+ 9z = 7
 
     for those equations, A'll be
 

@@ -10,14 +10,8 @@ eşitsizliği sağlanır ise bu ifade *Kesin Köşegen Baskın Matristir.*
 **Açıklama için;**
 
 *Lineer Denklem Sistemimizi aşağıdaki gibi düşünelim.*
-$$
-\left(\begin{matrix} 
-x_{11} & x_{12} & \cdots & x_{1n}\\
-x_{21} & x_{22} & \cdots & x_{2n}\\
-\vdots & \vdots & \ddots & \vdots\\                    
-x_{n1} & x_{n2} & \cdots & x_{nn}
-\end{matrix}\right)  
-$$
+$$\left(\begin{matrix} 
+x_{11}&x_{12}&\cdots&x_{1n}\\x_{21} & x_{22} & \cdots & x_{2n}\\\vdots & \vdots & \ddots & \vdots\\x_{n1} & x_{n2} & \cdots & x_{nn}\end{matrix}\right)$$
 
 *Köşegen Matrislerimiz aşağıdaki gibidir:*
 
@@ -28,18 +22,12 @@ bu köşe matrislerin mutlak değeri, kendi satırlarında bulunan diğer indeks
 
 **örnek olarak lineer denklemimiz aşağıdaki gibi olsun:**
     
-17$x_{1}$ + 5$x_{2}$ + 10$x_{3}$ = 15\
-8$x_{1}$ + 15$x_{2}$ + 2$x_{3}$ = 12\
+17$x_{1}$ + 5$x_{2}$ + 10$x_{3}$ = 15
+8$x_{1}$ + 15$x_{2}$ + 2$x_{3}$ = 12
 6$x_{1}$ + 2$x_{2}$ + 9$x_{3}$ = 7
 
 buna göre matris
-$$\ A =
-\left(\begin{matrix} 
-17 & 5 & -10\\\\
-8 & -15 & 2\\\\
-6 & -2 & 9
-\end{matrix}\right)  
-$$
+$$A=\left(\begin{matrix}17 & 5 & -10\\\\8 & -15 & 2\\\\6 & -2 &9\end{matrix}\right)$$
 
 şeklinde olur. az önceki anlatılanı uygularsak:
 
