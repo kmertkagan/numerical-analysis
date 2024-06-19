@@ -5,8 +5,9 @@ def jacobi(A, Y, x):
     length = len(A)
     jacob = x.copy() # direkt assignment yapınca aynı memory'de tutulduğundan tekrar Gauss-Seidel iterasyonu dönüyor.
     # yani jacob = X yapmak yerine jacob = X.copy() yapmalıyız.
-    # jacob = X.copy() Shallow Copy denir. 
-    # jacob = X yani direkt assignment'a ise Deep Copy denir.
+    # jacob = X.copy() Deep Copy denir. Aslında bu tam olarak sayılmaz çünkü yine aynı memoryde tutulur
+    # asıl çözüm "from copy import deepcopy" kullanmaktır(from indently)
+    # jacob = X yani direkt assignment'a ise Shallow Copy denir.
 
     for i in range(length):
         sum_val = Y[i]
